@@ -36,6 +36,29 @@ yarn start
 
 React development tools are recommended regardless of the web browser that is used during development.
 
+## Running the tests
+
+A github will automatically run each of the following tests before allowing a PR to be merged. You can test all of the tests
+below by running the following command.
+
+```
+yarn review
+```
+
+### Test coverage
+
+All tests can be run using the test script.
+
+```
+yarn test
+```
+
+TypeScript type checking
+
+```
+yarn test:ts
+```
+
 ## Deployment
 
 This project has no deployment scripts or procedures at this time.

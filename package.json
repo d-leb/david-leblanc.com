@@ -8,7 +8,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node scripts/start.js"
+    "review": "yarn test",
+    "start": "node scripts/start.js",
+    "test:ts": "tsc",
+    "test": "yarn test:ts"
   },
   "dependencies": {
     "react": "^17.0.1",
