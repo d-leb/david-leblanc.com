@@ -75,6 +75,8 @@ This project has no deployment scripts or procedures at this time.
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
+Patch level is automatically updated on every merge into the develop branch.
+
 ## Authors
 
 - **David LeBlanc** - _Initial work_ - [d-leb](https://github.com/d-leb)
