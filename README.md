@@ -28,8 +28,24 @@ Install all package dependencies.
 yarn install
 ```
 
+Development environment can now be started.
+
+```
+yarn start
+```
+
+React development tools are recommended regardless of the web browser that is used during development.
+
+## Deployment
+
+This project has no deployment scripts or procedures at this time.
+
 ## Built With
 
+- [BabelJS](https://babeljs.io/) - JavaScript compiler
+- [ReactJS](https://reactjs.org/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript language
+- [Webpack](https://webpack.js.org/) - Static module bundler
 - [Yarn](https://yarnpkg.com/) - Package management
 
 ## Versioning
