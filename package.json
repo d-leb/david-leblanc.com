@@ -14,6 +14,7 @@
     "lint": "yarn eslint",
     "review": "yarn lint && yarn test",
     "start": "node scripts/start.js",
+    "storybook": "start-storybook -p 9001",
     "test:ts": "tsc",
     "test": "yarn test:ts"
   },
