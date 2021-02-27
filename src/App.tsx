@@ -1,3 +1,5 @@
 import React from 'react'
 
-export const App = () => <div>PLACEHOLDER</div>
+import { Placeholder } from 'components/Placeholder'
+
+export const App = () => <Placeholder />
