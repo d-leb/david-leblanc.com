@@ -6,6 +6,7 @@ const webpackBaseConfig = require('./webpack.base.config')
 module.exports = {
   mode: 'development',
   ...webpackBaseConfig,
+  devtool: 'eval-cheap-module-source-map',
   entry: ['react-hot-loader/patch', ...webpackBaseConfig.entry],
   output: {
     ...webpackBaseConfig.output,
