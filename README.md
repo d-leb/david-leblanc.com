@@ -45,6 +45,20 @@ below by running the following command.
 yarn review
 ```
 
+### Code quality tests
+
+Code quality is verified using ESLint.
+
+```
+yarn eslint
+```
+
+If issues are found, you may try to automatically correct the issues.
+
+```
+yarn eslint:fix
+```
+
 ### Test coverage
 
 All tests can be run using the test script.
