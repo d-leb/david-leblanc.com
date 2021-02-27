@@ -1,12 +1,28 @@
 import React from 'react'
 
-import { Placeholder as PlaceholderComponent, Props as PlaceholderProps } from './index'
+import { Placeholder as PlaceholderComponent } from './index'
 
 export default {
-  title: 'Placeholder',
+  title: 'Design System/Base',
+  component: PlaceholderComponent,
+  argTypes: {
+    background: {
+      control: {
+        type: 'color',
+      },
+    },
+    color: {
+      control: {
+        type: 'color',
+      },
+    },
+  },
 }
 
-export const Placeholder = ({ text }: PlaceholderProps) => <PlaceholderComponent {...{ text }} />
+type Props = Parameters<typeof PlaceholderComponent>[0]
+export const Placeholder = (props: Props) => <PlaceholderComponent {...props} />
 Placeholder.args = {
-  text: 'PLACEHOLDER',
+  background: undefined,
+  color: undefined,
+  text: undefined,
 }
