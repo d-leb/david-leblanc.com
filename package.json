@@ -11,7 +11,7 @@
     "eslint": "eslint --ext ts,tsx src --max-warnings=0",
     "eslint:fix": "eslint --ext ts,tsx src --fix",
     "lint": "yarn eslint",
-    "review": "yarn test",
+    "review": "yarn lint && yarn test",
     "start": "node scripts/start.js",
     "test:ts": "tsc",
     "test": "yarn test:ts"
