@@ -89,6 +89,7 @@ This project has no deployment scripts or procedures at this time.
 - [ESLint](https://eslint.org/) - Code quality inspector
 - [ReactJS](https://reactjs.org/) - UI library
 - [Storybook](https://storybook.js.org/) - UI development container
+- [Styled-Components](https://styled-components.com/) - CSS component system
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript language
 - [Webpack](https://webpack.js.org/) - Static module bundler
 - [Yarn](https://yarnpkg.com/) - Package management
