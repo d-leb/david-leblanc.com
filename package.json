@@ -1,6 +1,6 @@
 {
   "name": "david-leblanc.com",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "This is my open source personal blog and portfolio site built using ReactJS",
   "main": "scripts/start.js",
   "repository": "git@github.com:d-leb/david-leblanc.com.git",
