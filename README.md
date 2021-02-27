@@ -66,6 +66,7 @@ This project has no deployment scripts or procedures at this time.
 ## Built With
 
 - [BabelJS](https://babeljs.io/) - JavaScript compiler
+- [ESLint](https://eslint.org/) - Code quality inspector
 - [ReactJS](https://reactjs.org/) - UI library
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript language
 - [Webpack](https://webpack.js.org/) - Static module bundler
