@@ -6,7 +6,6 @@ const webpack = require('webpack')
 const paths = require('../config/paths')
 const webpackConfig = require('../config/webpack.prod.config')
 
-console.clear()
 console.log('Begin build...')
 
 const spinner = ora('Building for production...\n')
