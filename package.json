@@ -12,7 +12,7 @@
     "eslint": "eslint --ext ts,tsx src --max-warnings=0",
     "eslint:fix": "eslint --ext ts,tsx src --fix",
     "lint": "yarn eslint",
-    "review": "yarn lint && yarn test",
+    "review": "yarn lint && yarn test && yarn build",
     "start": "node scripts/start.js",
     "storybook": "start-storybook -p 9001",
     "test:ts": "tsc",
