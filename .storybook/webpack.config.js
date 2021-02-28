@@ -2,6 +2,7 @@ const webpackBaseConfig = require('../config/webpack.base.config')
 
 module.exports = ({ config }) => ({
   ...config,
+  mode: 'development',
   module: {
     ...config.module,
     rules: [
@@ -23,6 +24,9 @@ module.exports = ({ config }) => ({
         enforce: 'pre',
       },
     ],
+  },
+  performance: {
+    hints: false,
   },
   plugins: [...config.plugins],
   resolve: {

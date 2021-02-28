@@ -6,6 +6,9 @@
 # production
 /dist
 
+# storybook
+/dist-storybook
+
 # ide
 /.vscode
 
