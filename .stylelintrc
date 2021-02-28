@@ -1,0 +1,21 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-styled-components",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "selector-type-no-unknown": [
+      true, {
+      "ignoreTypes": ["/^-styled-mixin/"]
+    }],
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreKeywords": ["/^\\$?/"]
+      }
+    ]
+  },
+  "syntax": "scss"
+}
