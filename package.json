@@ -10,10 +10,11 @@
   "scripts": {
     "analyze": "node scripts/analyze.js",
     "build": "node scripts/build.js",
+    "build:storybook": "yarn build-storybook -o ./dist-storybook",
     "eslint": "eslint --ext ts,tsx src --max-warnings=0",
     "eslint:fix": "eslint --ext ts,tsx src --fix",
     "lint": "yarn eslint && yarn stylelint",
-    "review": "yarn lint && yarn test && yarn build",
+    "review": "yarn lint && yarn test && yarn build && yarn build:storybook",
     "start": "node scripts/start.js",
     "storybook": "start-storybook -p 9001",
     "stylelint": "stylelint 'src/**/*.ts?'",
