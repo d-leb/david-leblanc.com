@@ -90,6 +90,7 @@ This project has no deployment scripts or procedures at this time.
 - [ReactJS](https://reactjs.org/) - UI library
 - [Storybook](https://storybook.js.org/) - UI development container
 - [Styled-Components](https://styled-components.com/) - CSS component system
+- [Stylelint](https://stylelint.io/) - CSS quality inspector
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript language
 - [Webpack](https://webpack.js.org/) - Static module bundler
 - [Yarn](https://yarnpkg.com/) - Package management
