@@ -22,7 +22,6 @@
     "test": "yarn test:ts"
   },
   "dependencies": {
-    "@axe-core/react": "^4.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
@@ -32,6 +31,7 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@axe-core/react": "^4.1.1",
     "@babel/core": "^7.13.8",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.13.8",

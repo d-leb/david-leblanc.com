@@ -6,8 +6,6 @@ import { App } from 'App'
 import { GlobalStyle } from 'styles/GlobalStyle'
 import { Environment } from 'utils/environment'
 
-import axe from '@axe-core/react'
-
 const renderApp = () =>
   render(
     <BrowserRouter>
@@ -18,7 +16,7 @@ const renderApp = () =>
   )
 
 if (Environment.mode === 'development') {
-  axe(React, ReactDOM, 1000)
+  import('@axe-core/react').then((axe) => axe.default(React, ReactDOM, 1000))
 }
 
 renderApp()
