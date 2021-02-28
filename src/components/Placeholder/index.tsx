@@ -17,6 +17,6 @@ const Container = styled.div<ContainerProps>`
   color: ${(props) => props.color};
 `
 
-export const Placeholder = ({ background = '#ec603a', color = '#fff', text = 'PLACEHOLDER' }: Props) => (
+export const Placeholder = ({ background = '#5a41db', color = '#fff', text = 'PLACEHOLDER' }: Props) => (
   <Container {...{ background, color }}>{text}</Container>
 )
