@@ -22,6 +22,7 @@
     "test": "yarn test:ts"
   },
   "dependencies": {
+    "@axe-core/react": "^4.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hot-loader": "^4.13.0",
