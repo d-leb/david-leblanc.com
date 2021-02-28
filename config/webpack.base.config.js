@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 const paths = require('../config/paths')
 
@@ -19,6 +20,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new StyleLintPlugin({
+      files: 'src/**/*.ts?',
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       hash: true,
