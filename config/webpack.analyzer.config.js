@@ -1,9 +1,7 @@
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-const webpackBaseConfig = require('./webpack.base.config')
+const webpackProdConfig = require('./webpack.prod.config')
 
 module.exports = {
-  mode: 'production',
-  ...webpackBaseConfig,
-  devtool: false,
-  plugins: [...webpackBaseConfig.plugins, new BundleAnalyzerPlugin()],
+  ...webpackProdConfig,
+  plugins: [...webpackProdConfig.plugins, new BundleAnalyzerPlugin()],
 }
