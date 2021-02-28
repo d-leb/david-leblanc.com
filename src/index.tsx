@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM, { render } from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 import { App } from 'App'
 import { GlobalStyle } from 'styles/GlobalStyle'
@@ -9,10 +10,10 @@ import axe from '@axe-core/react'
 
 const renderApp = () =>
   render(
-    <>
+    <BrowserRouter>
       <GlobalStyle />
       <App />
-    </>,
+    </BrowserRouter>,
     document.getElementById('root')
   )
 

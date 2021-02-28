@@ -88,6 +88,7 @@ This project has no deployment scripts or procedures at this time.
 - [BabelJS](https://babeljs.io/) - JavaScript compiler
 - [ESLint](https://eslint.org/) - Code quality inspector
 - [ReactJS](https://reactjs.org/) - UI library
+- [React Router](https://reactrouter.com/) - Routing and navigation library
 - [Storybook](https://storybook.js.org/) - UI development container
 - [Styled-Components](https://styled-components.com/) - CSS component system
 - [Stylelint](https://stylelint.io/) - CSS quality inspector
