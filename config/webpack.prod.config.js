@@ -1,3 +1,5 @@
+const CompressionPlugin = require('compression-webpack-plugin')
+
 const webpackBaseConfig = require('./webpack.base.config')
 
 module.exports = {
@@ -17,4 +19,5 @@ module.exports = {
     hints: 'error',
     maxEntrypointSize: 300000,
   },
+  plugins: [...webpackBaseConfig.plugins, new CompressionPlugin()],
 }
