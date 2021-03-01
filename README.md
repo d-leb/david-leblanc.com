@@ -85,8 +85,10 @@ This project has no deployment scripts or procedures at this time.
 
 ## Built With
 
+- [Axe-Core](https://www.deque.com/axe/) - Accessibility testing tools
 - [BabelJS](https://babeljs.io/) - JavaScript compiler
 - [ESLint](https://eslint.org/) - Code quality inspector
+- [FormatJS](https://formatjs.io/) - Internationalization libraries
 - [ReactJS](https://reactjs.org/) - UI library
 - [React Helmet](https://github.com/nfl/react-helmet) - Document head manager
 - [React Router](https://reactrouter.com/) - Routing and navigation library

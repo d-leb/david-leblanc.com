@@ -10,9 +10,11 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: 'all',
+      maxSize: 200000,
     },
   },
   performance: {
     hints: 'error',
+    maxEntrypointSize: 300000,
   },
 }
