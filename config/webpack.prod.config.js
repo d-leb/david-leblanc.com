@@ -15,5 +15,6 @@ module.exports = {
   },
   performance: {
     hints: 'error',
+    maxEntrypointSize: 300000,
   },
 }
