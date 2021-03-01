@@ -1,22 +1,25 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import ReactDOM, { render } from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
 
 import { App } from 'App'
 import { GlobalStyle } from 'styles/GlobalStyle'
 import { Environment } from 'utils/environment'
 
+const Providers = lazy(() => import(/* webpackMode: "lazy" */ './Providers'))
+
 const renderApp = () =>
   render(
-    <BrowserRouter>
-      <GlobalStyle />
-      <App />
-    </BrowserRouter>,
+    <Suspense fallback={<></>}>
+      <Providers>
+        <GlobalStyle />
+        <App />
+      </Providers>
+    </Suspense>,
     document.getElementById('root')
   )
 
 if (Environment.mode === 'development') {
-  import('@axe-core/react').then((axe) => axe.default(React, ReactDOM, 1000))
+  import(/* webpackMode: "lazy" */ '@axe-core/react').then((axe) => axe.default(React, ReactDOM, 1000))
 }
 
 renderApp()
