@@ -89,9 +89,11 @@ This project has no deployment scripts or procedures at this time.
 - [BabelJS](https://babeljs.io/) - JavaScript compiler
 - [ESLint](https://eslint.org/) - Code quality inspector
 - [FormatJS](https://formatjs.io/) - Internationalization libraries
+- [Jest](https://jestjs.io/) - JavaScript testing framework
 - [ReactJS](https://reactjs.org/) - UI library
 - [React Helmet](https://github.com/nfl/react-helmet) - Document head manager
 - [React Router](https://reactrouter.com/) - Routing and navigation library
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) - API Library for React components
 - [Storybook](https://storybook.js.org/) - UI development container
 - [Styled-Components](https://styled-components.com/) - CSS component system
 - [Stylelint](https://stylelint.io/) - CSS quality inspector
