@@ -43,8 +43,10 @@
         "error",
         {
           "devDependencies": [
+            "**/devtools/*.ts",
             "**/*.stories.tsx",
-            "**/*.test.tsx?"
+            "**/*.test.ts",
+            "**/*.test.tsx"
           ]
         }
       ],
