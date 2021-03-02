@@ -15,6 +15,11 @@ module.exports = function (api) {
       '@babel/preset-react',
       '@babel/preset-typescript',
     ],
-    plugins: ['@babel/plugin-proposal-class-properties', 'transform-class-properties', 'react-hot-loader/babel'],
+    plugins: [
+      '@babel/plugin-proposal-class-properties',
+      '@babel/plugin-transform-runtime',
+      'transform-class-properties',
+      'react-hot-loader/babel',
+    ],
   }
 }
