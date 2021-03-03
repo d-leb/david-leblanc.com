@@ -34,7 +34,7 @@ module.exports = {
     },
     host: 'localhost',
     port: 3000,
-    open: true,
+    open: process.env.HIDE_BROWSER !== 'true',
     openPage: '',
     contentBase: paths.dist,
     historyApiFallback: true,
