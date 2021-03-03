@@ -21,6 +21,16 @@ jobs:
       - run: yarn test
         env:
           CI: true
+  cypress:
+    runs-on: ubuntu-latest
+    container: cypress/base:14.16.0
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: yarn install --frozen-lockfile
+      - run: yarn cypress
   build:
     runs-on: ubuntu-latest
     steps:
