@@ -13,15 +13,15 @@
     "build:storybook": "yarn build-storybook -o ./dist-storybook",
     "eslint": "eslint --ext ts,tsx src --max-warnings=0",
     "eslint:fix": "eslint --ext ts,tsx src --fix",
+    "jest": "jest",
     "lint": "yarn eslint && yarn stylelint",
     "review": "yarn lint && yarn test && yarn build && yarn build:storybook",
     "start": "node scripts/start.js",
     "storybook": "start-storybook -p 9001",
     "stylelint": "stylelint 'src/**/*.ts?'",
     "stylelint:fix": "stylelint 'src/**/*.ts?' --fix",
-    "test:jest": "jest",
-    "test:ts": "tsc",
-    "test": "yarn test:ts && yarn test:jest"
+    "test": "yarn tsc && yarn jest",
+    "tsc": "tsc"
   },
   "dependencies": {
     "react": "^17.0.1",
