@@ -65,7 +65,19 @@ If issues are found, you may try to automatically correct the issues.
 yarn eslint:fix
 ```
 
-### Test coverage
+Code quality for CSS styles are verified using Stylelint.
+
+```
+yarn stylelint
+```
+
+If issues are found, you may try to automatically correct the issues.
+
+```
+yarn stylelint:fix
+```
+
+### Test coverage (Integration and Unit)
 
 All tests can be run using the test script.
 
@@ -73,15 +85,57 @@ All tests can be run using the test script.
 yarn test
 ```
 
-TypeScript type checking
+You can manually check TypeScript types and syntax.
 
 ```
-yarn test:ts
+yarn tsc
+```
+
+Manually run Jest tests that include react component (integration level) and axe (accessibility) test.
+
+```
+yarn jest
+```
+
+### Test coverage (End to End)
+
+Automated end to end tests can be acheived with Cypress using the headless test script.
+
+```
+yarn cypress
+```
+
+End to end tests can be run against a locally running development instance as well.
+
+```
+yarn cypress:run
+```
+
+A full user interface can be opened for cypress for the project.
+
+```
+yarn cypress:open
 ```
 
 ## Deployment
 
-This project has no deployment scripts or procedures at this time.
+Install all package dependencies.
+
+```
+yarn install
+```
+
+A complete build will be generated and placed in the ***dist*** folder.
+
+```
+yarn build
+```
+
+Storybook files can be generated for use on an external server.
+
+```
+yarn build:storybook
+```
 
 ## Built With
 
