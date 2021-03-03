@@ -87,6 +87,8 @@ This project has no deployment scripts or procedures at this time.
 
 - [Axe-Core](https://www.deque.com/axe/) - Accessibility testing tools
 - [BabelJS](https://babeljs.io/) - JavaScript compiler
+- [Cypress](https://www.cypress.io/) - End to End testing environment
+- [Cypress Axe](https://github.com/component-driven/cypress-axe) - Accessibility testing for Cypress
 - [ESLint](https://eslint.org/) - Code quality inspector
 - [FormatJS](https://formatjs.io/) - Internationalization libraries
 - [Jest](https://jestjs.io/) - JavaScript testing framework
