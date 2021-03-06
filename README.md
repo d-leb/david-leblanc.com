@@ -53,6 +53,12 @@ yarn review
 
 ### Code quality tests
 
+All code quality tests can be run using the lint script.
+
+```
+yarn lint
+```
+
 Code quality is verified using ESLint.
 
 ```
@@ -105,6 +111,12 @@ Automated end to end tests can be acheived with Cypress using the headless test 
 yarn cypress
 ```
 
+The project can be started on a separate command shell.
+
+```
+yarn start:test
+```
+
 End to end tests can be run against a locally running development instance as well.
 
 ```
@@ -115,6 +127,14 @@ A full user interface can be opened for cypress for the project.
 
 ```
 yarn cypress:open
+```
+
+### Bundle and Chunk management
+
+Chunk and module sizes and entry points can be examined.
+
+```
+yarn analyze
 ```
 
 ## Deployment
@@ -144,7 +164,7 @@ yarn build:storybook
 - [Cypress](https://www.cypress.io/) - End to End testing environment
 - [Cypress Axe](https://github.com/component-driven/cypress-axe) - Accessibility testing for Cypress
 - [ESLint](https://eslint.org/) - Code quality inspector
-- [FormatJS](https://formatjs.io/) - Internationalization libraries
+- [FormatJS](https://formatjs.io/) - Internationalization libraries (react-intl)
 - [Jest](https://jestjs.io/) - JavaScript testing framework
 - [Jest Axe](https://github.com/nickcolley/jest-axe) - Accessibility testing library for Jest
 - [ReactJS](https://reactjs.org/) - UI library
