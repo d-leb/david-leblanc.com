@@ -1,12 +1,6 @@
 describe('Website', () => {
-  it('/ is accessible', () => {
-    cy.visit('/')
-    cy.injectAxe()
-    cy.checkA11y()
-  })
-
-  it('/example is accessible', () => {
-    cy.visit('/example')
+  it('/contact/ is accessible', () => {
+    cy.visit('/contact/')
     cy.injectAxe()
     cy.checkA11y()
   })
