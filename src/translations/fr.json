@@ -1,5 +1,9 @@
 {
-  "heading.example": "Exemple",
-  "heading.home": "Maison",
-  "heading.placeholder": "En-tête d'espace réservé"
+  "heading.contact": "Contacter",
+  "lorem-ipsum.sentence-01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "lorem-ipsum.sentence-02": "Curabitur dictum leo non metus facilisis, non lobortis.",
+  "lorem-ipsum.sentence-03": "Vivamus tortor nunc, luctus at imperdiet sed, ornare.",
+  "lorem-ipsum.sentence-04": "Pellentesque pharetra lacus tortor, maximus imperdiet arcu maximus.",
+  "lorem-ipsum.sentence-05": "Curabitur rhoncus, dolor nec blandit scelerisque, enim urna.",
+  "site.name": "david-leblanc.com"
 }

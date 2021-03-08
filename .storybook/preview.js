@@ -3,6 +3,7 @@ import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks'
 import React from 'react'
 import styled from 'styled-components'
 
+import Providers from 'Providers'
 import { GlobalStyle } from 'styles/GlobalStyle'
 
 const Wrapper = styled.div`
@@ -22,9 +23,11 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <Wrapper>
-      <GlobalStyle />
-      <Story />
-    </Wrapper>
+    <Providers>
+      <Wrapper>
+        <GlobalStyle />
+        <Story />
+      </Wrapper>
+    </Providers>
   ),
 ]
