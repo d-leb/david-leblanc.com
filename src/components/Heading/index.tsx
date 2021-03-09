@@ -31,6 +31,7 @@ const HeadingElement = ({ level = 2, messageId, messageValues, ...rest }: Props)
   }
 }
 
-export const Heading = styled(HeadingElement)<Props>`
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const Heading = styled(({ color, ...rest }: Props) => <HeadingElement {...rest} />)<Props>`
   ${(props) => (props.color ? `color: ${Colors[props.color]};` : '')};
 `
