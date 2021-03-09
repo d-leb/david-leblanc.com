@@ -2,10 +2,10 @@ import React from 'react'
 
 import { Colors } from 'styles'
 import { messages } from 'translations'
-import { Heading as HeadingComponent } from './index'
+import { Link as LinkComponent } from './index'
 
 export default {
-  title: 'Design System/Components/Heading',
+  title: 'Design System/Components/Link',
   argTypes: {
     color: {
       control: {
@@ -13,12 +13,10 @@ export default {
         options: [...Object.keys(Colors)],
       },
     },
-    level: {
+    hoverColor: {
       control: {
-        type: 'range',
-        min: 1,
-        max: 6,
-        step: 1,
+        type: 'select',
+        options: [...Object.keys(Colors)],
       },
     },
     messageId: {
@@ -32,14 +30,23 @@ export default {
         type: 'object',
       },
     },
+    size: {
+      control: {
+        type: 'text',
+      },
+    },
   },
 }
 
-type Props = Parameters<typeof HeadingComponent>[0]
-export const Heading = (props: Props) => <HeadingComponent {...props} />
-Heading.args = {
+type Props = Parameters<typeof LinkComponent>[0]
+export const Link = (props: Props) => <LinkComponent {...props} />
+Link.args = {
+  bold: false,
   color: undefined,
-  level: 2,
+  hoverColor: undefined,
+  italic: false,
   messageId: 'lorem-ipsum.sentence-01',
   messageValues: undefined,
+  nounderline: false,
+  size: undefined,
 }

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { useIntl } from 'react-intl'
 import styled from 'styled-components'
 
-import { Color, Colors } from 'styles/Colors'
+import { Color, Colors } from 'styles'
 import { MessageValues } from 'utils/internationalization'
 
 interface Props {
@@ -12,18 +12,23 @@ interface Props {
   messageId: string
   messageValues?: MessageValues
   size?: number
+  underline?: boolean
 }
 
-type StyledProps = Omit<Props, 'messageId' | 'messageValues'>
+type StyledProps = Omit<Props, 'messageId' | 'messageValues'> & { children: ReactNode }
 
-const StyledText = styled.span<StyledProps>`
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const StyledText = styled(({ bold, children, color, italic, size, underline, ...rest }: StyledProps) => (
+  <span {...rest}>{children}</span>
+))<StyledProps>`
   font-size: ${(props) => (props.size ? props.size : '1')}em;
   ${(props) => (props.bold ? 'font-weight: 600;' : '')}
   ${(props) => (props.italic ? 'font-style: italic;' : '')}
+  ${(props) => (props.underline ? 'text-decoration: underline;' : '')}
   ${(props) => (props.color ? `color: ${Colors[props.color]};` : '')}
 `
 
-export const Text = ({ bold, color, italic, messageId, messageValues, size }: Props) => {
+export const Text = ({ messageId, messageValues, ...rest }: Props) => {
   const { formatMessage } = useIntl()
-  return <StyledText {...{ bold, color, italic, size }}>{formatMessage({ id: messageId }, messageValues)}</StyledText>
+  return <StyledText {...rest}>{formatMessage({ id: messageId }, messageValues)}</StyledText>
 }
