@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import styledNormalize from 'styled-normalize'
 
-import { Colors } from 'styles/Colors'
+import { Colors } from 'styles'
 
 export const GlobalStyle = createGlobalStyle`
   ${styledNormalize}

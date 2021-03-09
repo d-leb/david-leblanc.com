@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react'
 import { useIntl } from 'react-intl'
 import styled from 'styled-components'
 
-import { Color, Colors } from 'styles/Colors'
+import { Color, Colors } from 'styles'
 import { MessageValues } from 'utils/internationalization'
 
 interface Props extends HTMLAttributes<HTMLHeadingElement> {
