@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { Heading } from 'components/Heading'
-import { Text } from 'components/Text'
-import { Title } from 'components/Title'
+import { Heading, Text, Title } from 'components'
 
 export const Contact = () => (
   <main>
