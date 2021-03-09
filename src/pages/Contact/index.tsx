@@ -1,11 +1,10 @@
 import React from 'react'
 
-import { Heading, Text, Title } from 'components'
+import { Text } from 'components'
+import { PageTemplate } from 'templates/PageTemplate'
 
 export const Contact = () => (
-  <main>
-    <Title messageId="heading.contact" />
-    <Heading messageId="heading.contact" level={1} />
+  <PageTemplate titleId="heading.contact" colorBand="ALLOY_ORANGE">
     <Text messageId="lorem-ipsum.sentence-01" />
-  </main>
+  </PageTemplate>
 )

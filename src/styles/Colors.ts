@@ -1,5 +1,6 @@
 export const Colors = {
   ALLOY_ORANGE: '#bd632f',
+  DAVYS_GREY: '#5e5e5e',
   DEEP_SPACE_SPARKLE: '#3a5c69',
   HARVEST_GOLD: '#d8973c',
   IVORY: '#fffff0',
