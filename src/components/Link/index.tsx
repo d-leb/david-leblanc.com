@@ -19,7 +19,6 @@ interface Props extends Omit<ReactRouterLinkProps, 'children'> {
 
 type StyledProps = Omit<Props, 'messageId' | 'messageValues'> & { children: ReactNode }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const StyledLink = styled(({ bold, children, color, hoverColor, italic, nounderline, size, ...rest }: StyledProps) => (
   <ReactRouterLink {...rest}>{children}</ReactRouterLink>
 ))<StyledProps>`

@@ -17,7 +17,6 @@ interface Props {
 
 type StyledProps = Omit<Props, 'messageId' | 'messageValues'> & { children: ReactNode }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const StyledText = styled(({ bold, children, color, italic, size, underline, ...rest }: StyledProps) => (
   <span {...rest}>{children}</span>
 ))<StyledProps>`
