@@ -19,6 +19,7 @@ const renderApp = () =>
   )
 
 if (Environment.mode === 'development') {
+  /* eslint-disable-next-line import/no-extraneous-dependencies */
   import(/* webpackMode: "lazy" */ '@axe-core/react').then((axe) => axe.default(React, ReactDOM, 1000))
 }
 
