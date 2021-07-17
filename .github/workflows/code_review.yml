@@ -1,5 +1,10 @@
 name: Automated Code Review
-on: [push]
+on:
+  push:
+    branches:
+      - '*'
+      - '*/*'
+      - '!master'
 jobs:
   lint:
     runs-on: ubuntu-latest
