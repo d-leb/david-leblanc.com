@@ -6,6 +6,9 @@ const paths = require('../config/paths')
 
 module.exports = {
   entry: [path.resolve(paths.src, 'index.tsx')],
+  externals: {
+    'crypto': 'crypto',
+  },
   output: {
     filename: '[name].[fullhash].js',
     path: path.resolve(paths.dist),

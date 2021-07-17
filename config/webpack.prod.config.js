@@ -7,6 +7,7 @@ module.exports = {
   ...webpackBaseConfig,
   devtool: false,
   externals: {
+    ...webpackBaseConfig.externals,
     '@axe-core/react': 'devtools',
   },
   optimization: {
