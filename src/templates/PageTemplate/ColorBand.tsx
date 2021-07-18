@@ -37,7 +37,7 @@ export const ColorBand = ({ colorBand, titleId }: Props) => (
   <Wrapper {...{ colorBand }}>
     <NavigationBanner />
     <Content>
-      <Heading level={1} color="IVORY" messageId={titleId} />
+      <Heading level={1} color="PAGE_TEXT_KNOCKOUT" messageId={titleId} />
     </Content>
   </Wrapper>
 )
