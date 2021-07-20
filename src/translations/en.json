@@ -1,5 +1,7 @@
 {
-  "heading.contact": "Contact",
+  "heading.about": "About Me",
+  "heading.contact": "Contact Me",
+  "heading.portfolio": "My Portfolio",
   "lorem-ipsum.sentence-01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "lorem-ipsum.sentence-02": "Curabitur dictum leo non metus facilisis, non lobortis.",
   "lorem-ipsum.sentence-03": "Vivamus tortor nunc, luctus at imperdiet sed, ornare.",

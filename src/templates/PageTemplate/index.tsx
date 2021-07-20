@@ -1,38 +1,51 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-import { Title } from 'components'
-import { Breakpoints, Color } from 'styles'
-import { ColorBand } from './ColorBand'
+import { Heading } from 'components'
+import { Breakpoints, Color, Colors } from 'styles'
 
 interface Props {
+  backgroundColor?: Color
   children: ReactNode
-  colorBand: Color
-  titleId: string
+  nopadding?: boolean
+  titleId?: string
 }
 
-const Main = styled.main`
+const Section = styled.section<Props>`
   display: block;
   width: 100%;
+  ${(props) => props.backgroundColor && `background-color: ${Colors[props.backgroundColor]};`}
 `
 
-const Content = styled.div`
-  max-width: 1020px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
+const Content = styled(({ nopadding, ...rest }: Partial<Props>) => <div {...rest} />)<Props>`
+  ${(props) =>
+    !props.nopadding
+      ? `
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 40px 40px 40px;
 
-  @media ${Breakpoints.Mobile} {
-    padding: 20px;
-  }
+        @media ${Breakpoints.Mobile} {
+          padding: 10px 20px 20px 20px;
+        }
+      `
+      : ''}
 `
 
-export const PageTemplate = ({ children, colorBand, titleId }: Props) => (
-  <>
-    <Title messageId={titleId} />
-    <ColorBand {...{ colorBand, titleId }} />
-    <Main>
-      <Content>{children}</Content>
-    </Main>
-  </>
+const HeadingWrapper = styled.div`
+  text-align: center;
+`
+
+export const PageTemplate = ({ backgroundColor, children, nopadding, titleId }: Props) => (
+  <Section {...{ backgroundColor }}>
+    <Content {...{ nopadding }}>
+      {titleId && (
+        <HeadingWrapper>
+          <Heading level={1} color="PAGE_TEXT" capitalize messageId={titleId} />
+        </HeadingWrapper>
+      )}
+      {children}
+    </Content>
+  </Section>
 )
