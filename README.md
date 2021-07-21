@@ -8,7 +8,7 @@ This is my open source personal blog and portfolio site built using ReactJS host
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get your copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -26,6 +26,12 @@ Install all package dependencies.
 
 ```
 yarn install
+```
+
+Copy environment variables and edit to your needs.
+
+```
+cp .env.sample .env
 ```
 
 Development environment can now be started.
@@ -163,6 +169,7 @@ yarn build:storybook
 - [BabelJS](https://babeljs.io/) - JavaScript compiler
 - [Cypress](https://www.cypress.io/) - End to End testing environment
 - [Cypress Axe](https://github.com/component-driven/cypress-axe) - Accessibility testing for Cypress
+- [DotEnv Webpack](https://github.com/mrsteele/dotenv-webpack/) - Environment variables webpack plugin
 - [ESLint](https://eslint.org/) - Code quality inspector
 - [FormatJS](https://formatjs.io/) - Internationalization libraries (react-intl)
 - [Jest](https://jestjs.io/) - JavaScript testing framework

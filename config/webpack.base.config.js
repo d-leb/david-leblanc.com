@@ -1,3 +1,4 @@
+const Dotenv = require('dotenv-webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
@@ -7,7 +8,7 @@ const paths = require('../config/paths')
 module.exports = {
   entry: [path.resolve(paths.src, 'index.tsx')],
   externals: {
-    'crypto': 'crypto',
+    crypto: 'crypto',
   },
   output: {
     filename: '[name].[fullhash].js',
@@ -23,6 +24,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new Dotenv(),
     new StyleLintPlugin({
       files: 'src/**/*.ts?',
     }),
