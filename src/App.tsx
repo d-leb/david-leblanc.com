@@ -1,12 +1,21 @@
 import React from 'react'
-import { Redirect, Route, Switch } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
+import { useIntl } from 'react-intl'
 
-import { Routes } from 'config/routes'
-import { Contact } from 'pages/Contact'
+import { About, Contact, Intro, Portfolio } from 'pages'
 
-export const App = () => (
-  <Switch>
-    <Route exact path={Routes.Contact} component={Contact} />
-    <Redirect to={Routes.Contact} />
-  </Switch>
-)
+export const App = () => {
+  const { formatMessage } = useIntl()
+  const siteName = formatMessage({ id: 'site.name' })
+  return (
+    <main>
+      <Helmet>
+        <title>{siteName}</title>
+      </Helmet>
+      <Intro />
+      <About />
+      <Portfolio />
+      <Contact />
+    </main>
+  )
+}

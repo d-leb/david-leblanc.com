@@ -6,6 +6,7 @@ import { Color, Colors } from 'styles'
 import { MessageValues } from 'utils/internationalization'
 
 interface Props extends HTMLAttributes<HTMLHeadingElement> {
+  capitalize?: boolean
   color?: Color
   level?: 1 | 2 | 3 | 4 | 5 | 6
   messageId: string
@@ -31,6 +32,7 @@ const HeadingElement = ({ level = 2, messageId, messageValues, ...rest }: Props)
   }
 }
 
-export const Heading = styled(({ color, ...rest }: Props) => <HeadingElement {...rest} />)<Props>`
-  ${(props) => (props.color ? `color: ${Colors[props.color]};` : '')};
+export const Heading = styled(({ capitalize, color, ...rest }: Props) => <HeadingElement {...rest} />)<Props>`
+  ${(props) => (props.color ? `color: ${Colors[props.color]};` : '')}
+  ${(props) => (props.capitalize ? 'text-transform: uppercase;' : '')}
 `

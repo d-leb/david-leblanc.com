@@ -26,14 +26,14 @@ const StyledLink = styled(({ bold, children, color, hoverColor, italic, nounderl
   ${(props) => (props.bold ? 'font-weight: 600;' : '')}
   ${(props) => (props.italic ? 'font-style: italic;' : '')}
   ${(props) => (props.nounderline ? 'text-decoration: none;' : '')}
-  color: ${(props) => (props.color ? Colors[props.color] : Colors.DEEP_SPACE_SPARKLE)};
+  color: ${(props) => (props.color ? Colors[props.color] : Colors.LINK_NORMAL)};
 
   &:visited, &:link {
-    color: ${(props) => (props.color ? Colors[props.color] : Colors.DEEP_SPACE_SPARKLE)};
+    color: ${(props) => (props.color ? Colors[props.color] : Colors.LINK_VISITED)};
   }
 
   &:active, &:hover {
-    color: ${(props) => (props.hoverColor ? Colors[props.hoverColor] : Colors.ALLOY_ORANGE)};
+    color: ${(props) => (props.hoverColor ? Colors[props.hoverColor] : Colors.LINK_HOVER)};
   }
 `
 

@@ -21,6 +21,11 @@ export default {
         step: 1,
       },
     },
+    capitalize: {
+      control: {
+        type: 'boolean',
+      },
+    },
     messageId: {
       control: {
         type: 'select',

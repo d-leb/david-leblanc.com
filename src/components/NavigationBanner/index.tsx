@@ -7,7 +7,7 @@ import { Breakpoints, Colors } from 'styles'
 
 const Wrapper = styled.nav`
   display: block;
-  background-color: ${Colors.IVORY};
+  background-color: ${Colors.PAGE_BACKGROUND};
   position: relative;
   top: 16px;
   height: 80px;
@@ -38,8 +38,8 @@ export const NavigationBanner = () => (
           messageId="site.name"
           size={1.3}
           to={Routes.Contact}
-          color="JET"
-          hoverColor="DAVYS_GREY"
+          color="NAV_LINK_NORMAL"
+          hoverColor="NAV_LINK_HOVER"
           nounderline
           bold
         />
@@ -49,8 +49,8 @@ export const NavigationBanner = () => (
           messageId="heading.contact"
           size={1.3}
           to={Routes.Contact}
-          color="JET"
-          hoverColor="DAVYS_GREY"
+          color="NAV_LINK_NORMAL"
+          hoverColor="NAV_LINK_HOVER"
           nounderline
           bold
         />
