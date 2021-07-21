@@ -2,10 +2,18 @@
   "heading.about": "Sur moi",
   "heading.contact": "Contactez moi",
   "heading.portfolio": "Mon portfolio",
+  "intro.greeting": "Je suis Dave et je suis ",
+  "intro.greeting-architect": "architecte.",
+  "intro.greeting-developer": "développeur.",
+  "intro.greeting-engineer": "ingénieur.",
+  "intro.greeting-leader": "leader.",
+  "intro.greeting-mentor": "mentor.",
+  "intro.greeting-tester": "testeur.",
   "lorem-ipsum.sentence-01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "lorem-ipsum.sentence-02": "Curabitur dictum leo non metus facilisis, non lobortis.",
   "lorem-ipsum.sentence-03": "Vivamus tortor nunc, luctus at imperdiet sed, ornare.",
   "lorem-ipsum.sentence-04": "Pellentesque pharetra lacus tortor, maximus imperdiet arcu maximus.",
   "lorem-ipsum.sentence-05": "Curabitur rhoncus, dolor nec blandit scelerisque, enim urna.",
+  "salutations": "salut.",
   "site.name": "david-leblanc.com"
 }
